@@ -1,4 +1,10 @@
-const data = {
+import IProduct from '../interfaces/IProduct';
+
+interface IData {
+  products: IProduct[];
+}
+
+const data: IData = {
   products: [
     {
       name: 'Free Shirt',
