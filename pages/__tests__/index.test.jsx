@@ -5,7 +5,6 @@ import Home from '../index';
 describe('Home', () => {
   it('renders a heading', () => {
     render(<Home />);
-
-    const divElement = screen.getByText(/hello/i);
+    const divElement = screen.getByText(/products/i);
   });
 });
