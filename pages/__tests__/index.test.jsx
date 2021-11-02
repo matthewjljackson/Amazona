@@ -6,8 +6,6 @@ describe('Home', () => {
   it('renders a heading', () => {
     render(<Home />);
 
-    const heading = screen.getByRole('heading', {
-      name: /welcome to next\.js!/i,
-    });
+    const divElement = screen.getByText(/hello/i);
   });
 });
