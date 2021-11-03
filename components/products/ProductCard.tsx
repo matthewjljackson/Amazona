@@ -9,8 +9,8 @@ interface IProductCardProps {
 
 const ProductCard: FunctionComponent<IProductCardProps> = ({ product }) => {
   return (
-    <Box h='100%' border='1px'>
-      <Image src={Shirt} alt={product.name} />
+    <Box>
+      <Image src={product.image} alt={product.name} width='225' height='225' layout='responsive' />
       <Text>{product.name}</Text>
     </Box>
   );

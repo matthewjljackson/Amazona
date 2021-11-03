@@ -8,10 +8,12 @@ import IProduct from '../interfaces/IProduct';
 const Home: NextPage = () => {
   return (
     <Layout>
-      <Heading>Products</Heading>
-      <Grid h='80%' templateRows='repeat(2, 1fr)' templateColumns='repeat(3, 1fr)' gap='4'>
+      <Heading pl='10' pt='5'>
+        Products
+      </Heading>
+      <Grid h='85%' templateRows='repeat(2, 1fr)' templateColumns='repeat(3, 1fr)' gap='10' p='10'>
         {data.products.map((product: IProduct) => (
-          <GridItem key={product.name}>
+          <GridItem boxShadow='lg' key={product.name}>
             <ProductCard product={product} />
           </GridItem>
         ))}
