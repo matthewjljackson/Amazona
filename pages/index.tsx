@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Heading, Grid, GridItem, Box } from '@chakra-ui/react';
+import { Heading, Grid, GridItem } from '@chakra-ui/react';
 import Layout from '../components/Layout';
 import data from '../utils/data';
 import ProductCard from '../components/products/ProductCard';
