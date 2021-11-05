@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react';
 import Head from 'next/head';
+import NextLink from 'next/link';
 import { Container, HStack, Text, VStack } from '@chakra-ui/react';
 import { IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react';
 import { FaSun, FaMoon } from 'react-icons/fa';
@@ -13,10 +14,28 @@ const Layout: FunctionComponent = ({ children }) => {
         <title>Next Amazona</title>
       </Head>
       <HStack bgColor='#203040' w='100%' p='2' justify='space-between'>
-        <Text ml='5' fontWeight='bold' textColor='white'>
-          Amazona
-        </Text>
+        <NextLink href='/'>
+          <a>
+            <Text ml='5' fontWeight='bold' textColor='white' fontSize='xl'>
+              Amazona
+            </Text>
+          </a>
+        </NextLink>
         <HStack>
+          <NextLink href='/'>
+            <a>
+              <Text fontWeight='bold' textColor='white' pr='2'>
+                Cart
+              </Text>
+            </a>
+          </NextLink>
+          <NextLink href='/'>
+            <a>
+              <Text fontWeight='bold' textColor='white' pr='6'>
+                Login
+              </Text>
+            </a>
+          </NextLink>
           <IconButton
             mr='5'
             onClick={toggleColorMode}
